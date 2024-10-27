@@ -7,16 +7,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
 
-//import com.mysql.cj.xdevapi.Statement;
-import com.mysql.cj.protocol.Resultset;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.Test;
-
-
-
 
 public class DataTest {
 
@@ -33,7 +30,7 @@ public class DataTest {
 
 	@BeforeTest
 	public void mySetup() throws SQLException {
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "******");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "mmmaaa1999");
 	}
 
 	@Test(priority = 1,invocationCount = 50)
