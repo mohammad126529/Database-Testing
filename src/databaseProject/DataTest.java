@@ -30,7 +30,7 @@ public class DataTest {
 
 	@BeforeTest
 	public void mySetup() throws SQLException {
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "mmmaaa1999");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "*******");
 	}
 
 	@Test(priority = 1,invocationCount = 50)
